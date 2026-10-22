@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+.persona-container {
+  display: flex;
+  margin: 100px auto;
+  width: 500px;
+}
+
+.persona-container .persona {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: -20px; 
+  cursor: pointer;
+}
+
+.persona-container .persona img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, z-index 0.3s;
+}
+
+.persona-container .persona:hover img {
+  transform: scale(1.1);
+  z-index: 10; 
+}
+
+
+.persona-container .persona .name {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  width: 150px;
+  min-width: 100px;
+  padding: 8px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+
+.persona-container .persona .name .text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+
+.persona-container .persona .name::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px 8px 0 8px;
+  border-style: solid;
+  border-color: #000000 transparent transparent transparent;
+}
+
+.persona-container .persona:hover .name {
+  display: block;
+}

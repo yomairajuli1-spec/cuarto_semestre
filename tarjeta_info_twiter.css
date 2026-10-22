@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #25334d;
+}
+
+.profile-container {
+  margin: 100px auto;
+  width: 70px;
+  position: relative;
+}
+
+.profile-container .profile {
+}
+
+.profile-container .profile img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.profile-container .profile .info {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 340px;
+  min-height: 300px;
+  max-height: 360px;
+  background-color: #222;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+  z-index: 10;
+}
+
+.profile-container .profile:hover .info {
+  display: flex;
+  animation: show 0.3s ease;
+}
+
+.profile-container .profile a {
+  color: white;
+  text-decoration: none;
+}
+
+.profile-container .profile a:hover {
+  text-decoration: underline;
+}
+
+.profile-container .profile .info .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-container .profile .info .photo {
+}
+
+.profile-container .profile .info .photo img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.profile-container .profile .action {
+}
+
+.profile-container .profile .action button {
+  min-width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.profile-container .profile .action button:hover {
+  background-color: #eee;
+}
+
+.profile-container .profile .user-info {
+  padding: 10px 0;
+}
+
+.profile-container .profile .user-info .name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.profile-container .profile .user-info .username {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.profile-container .profile .description {
+  padding: 5px 0 15px 0;
+  flex: 1;
+  font-size: 14px;
+}
+
+.profile-container .profile .description a {
+  color: rgb(0, 140, 255);
+  text-decoration: none;
+}
+
+.profile-container .profile .followers-container {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  padding-bottom: 10px;
+}
+
+.profile-container .profile .followers-container a {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.profile-container .profile .followers-container .number {
+  font-weight: bold;
+  color: white;
+  margin-right: 4px;
+}
+
+.profile-container .profile .other {
+  padding-top: 10px;
+  border-top: 1px solid #333;
+}
+
+.profile-container .profile .other a {
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-container .profile .other a .photos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.profile-container .profile .other a .photos img {
+  margin-left: -12px;
+  border: solid 2px #222;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+
+.profile-container .profile .other a .names {
+  font-size: 12px;
+  line-height: 1.3;
+  color: #aaa;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

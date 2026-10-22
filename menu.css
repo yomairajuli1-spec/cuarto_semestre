@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: rgb(255, 163, 218);
+  color: rgb(13, 13, 13);
+  width: 100%;
+}
+nav .mobile {
+  display: none;
+}
+
+nav .logo {
+  min-width: 250px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 20px 25px;
+}
+
+nav a:hover {
+  color: rgb(183, 39, 147);
+  background-color: rgb(210, 180, 207);
+}
+
+nav .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav .desktop .primary,
+nav .desktop .secondary {
+  display: flex;
+}
+
+nav .secondary.full {
+}
+
+nav .secondary.mini {
+  display: none;
+}
+
+@media screen and (max-width: 853px) {
+  nav .logo {
+    min-width: 100px;
+  }
+
+  nav .secondary.full {
+    display: none;
+  }
+
+  nav .secondary.mini {
+    display: block block !important;
+  }
+
+  nav .secondary.mini .submenu {
+    background-color: black;
+   position:absolute;
+    display: none;
+    width: 200px;
+    right: 0;
+  }
+}
+ nav .secondary.mini .more:hover ~ .submenu {
+     display: block;
+ }
+@media screen and (max-width: 516px) {
+  nav .desktop {
+    display: none;
+  }
+
+  nav .mobile {
+    display: block;
+  }
+
+  nav .mobile .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .mobile .header .logo {
+    flex: 1;
+    text-align: center;
+  }
+
+  nav .mobile .header .more button {
+    padding: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+  }
+  nav .mobile .header .more button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(171, 248, 210);
+  }
+}

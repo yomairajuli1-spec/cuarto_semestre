@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 52px;
+  background-color: #222;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+nav:hover {
+  width: 300px; 
+}
+
+nav .bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .user {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  height: 150px;
+  white-space: nowrap; 
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+nav:hover .user {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+nav .user img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  display: block;
+}
+
+nav .links a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  white-space: nowrap; 
+  transition: background-color 0.2s;
+}
+
+nav .links a:hover {
+  background-color: rgb(31, 135, 205);
+  color: white;
+}
+
+
+nav .links a .icon {
+  min-width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+nav .links a .icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+nav .links a .title {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+nav:hover .links a .title {
+  opacity: 1;
+}
