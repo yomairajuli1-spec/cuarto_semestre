@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+}
+
+h2 {
+    color: #334155;
+    font-size: 20px;
+}
+
+.contenedor-ejemplo {
+    background-color: white;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 850px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+/* Estilos de las cajas */
+.caja {
+    width: 150px;
+    height: 50px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+/* EJEMPLO 1: SIN FLEXBOX */
+.contenedor-normal {
+    background-color: #e2e8f0;
+    height: 200px;
+    padding: 15px;
+    border: 2px dashed #64748b;
+}
+
+/* EJEMPLO 2: CON FLEXBOX */
+.contenedor-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #dbeafe;
+    padding: 15px;
+    height: 200px;
+    border: 2px dashed #2563eb;
+}
