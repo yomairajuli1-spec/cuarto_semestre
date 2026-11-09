@@ -1,0 +1,123 @@
+body {
+    background-color: #f1f5f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+.seccion-servicios {
+    background-color: #ffffff;
+    padding: 50px 20px 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.encabezado-servicios {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitulo {
+    color: #4f46e5;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.encabezado-servicios h2 {
+    color: #0f172a;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.encabezado-servicios p {
+    color: #64748b;
+    font-size: 14px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contenedor-flex-principal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.tarjetas-flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    z-index: 2; 
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    flex-basis: 280px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tarjeta .icono {
+    font-size: 24px;
+}
+
+.tarjeta h3 {
+    color: #0f172a;
+    font-size: 16px;
+    margin: 0;
+}
+
+.tarjeta p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.tarjeta a {
+    color: #0f172a;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.franja-azul {
+    background-color: #061637;
+    margin-top: -60px; 
+    padding: 80px 20px 40px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    z-index: 1;
+}
+
+.btn-book {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.btn-book:hover {
+    background-color: #1d4ed8;
+}
