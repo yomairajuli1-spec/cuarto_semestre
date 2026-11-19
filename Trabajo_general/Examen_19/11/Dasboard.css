@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+  min-height: calc(100vh - 48px);
+}
+
+.sidebar {
+  width: 245px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 16px;
+  flex-shrink: 0;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #1e293b;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #cbd5e1;
+  padding: 11px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.perfil-admin {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 12px;
+  background-color: beige;
+  padding: 8px 18px;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.06);
+}
+
+.perfil-admin img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+}
+
+.rol {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.area {
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.menu a:hover {
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.menu a.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.autor {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid #1e293b;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px 28px;
+}
+
+.topbar {
+  background-color: #ffffff;
+  padding: 14px 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.fecha {
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.cards {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 210px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+  border-top: 4px solid #64748b;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card h3 {
+  font-size: 0.98rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+.card .numero {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.card .detalle {
+  font-size: 0.84rem;
+  color: #64748b;
+}
+
+.card.Celeste {
+  border-top-color: #79afaa;
+  background-color: #f0fdfa;
+}
+
+.card.Celeste .numero {
+  color: #0e7490;
+}
+
+.card.azul {
+  border-top-color: #2563eb;
+}
+
+.card.azul .numero {
+  color: #1d4ed8;
+}
+
+.card.verde {
+  border-top-color: #16a34a;
+}
+
+.card.verde .numero {
+  color: #15803d;
+}
+
+.card.Rosado {
+  border-top-color: #d658a2;
+}
+
+.card.Rosado .numero {
+  color: #db2777;
+}
+
+.card.Morado {
+  border-top-color: #c836d8;
+}
+
+.card.Morado .numero {
+  color: #792579;
+}
+
+.tabla-contenedor {
+  background-color: #ffffff;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-x: auto;
+}
+
+.tabla-contenedor h2 {
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+thead {
+  background-color: #1e3a8a;
+  color: #ffffff;
+}
+
+th,
+td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+}
+
+th {
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+tbody tr:hover {
+  background-color: #eff6ff;
+}
+
+footer {
+  background-color: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 0.82rem;
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main {
+    padding: 16px;
+  }
+}
